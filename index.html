@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive multi-page website covering fundamental HTML and CSS concepts.">
+    <title>Home - Multi-Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            background-image:url('homepageres_LE_upscale_balanced_x4.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            background: #333;
+            padding: 20px;
+            text-align: center;
+            width:100%;
+            z-index: 1000;
+        }
+        .sticky-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .sticky-nav ul li {
+            margin: 0 15px;
+        }
+        .sticky-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .background-video {
+            width: 100%;
+            height: auto;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:black;
+            padding-left:50%;
+            width:50%;
+        }
+        .cta-button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .features-grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding:30px;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        #dark-mode-toggle {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+        
+                </li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Go</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>WELCOME TO OUR WEBSITE</h1>
+            <p>Good food is not just a meal; it's an experience that brings people together, creates memories, and satisfies the soul..</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+    
+    <section class="features-grid-layout">
+        <article>
+            <h2>Our Services</h2>
+            <p>Explore our range of web development services.</p>
+        </article>
+        <article>
+            <h2>Latest Blog Posts</h2>
+            <p>Read our insights on modern web technologies.</p>
+        </article>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Multi-Page Website. All rights reserved.</p>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </footer>
+</body>
+</html>

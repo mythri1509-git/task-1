@@ -1,0 +1,23 @@
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    background: #0b0a0b;
+    padding: 20px;
+    text-align: center;
+    width:100%;
+    z-index: 1000;
+}
+.sticky-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.sticky-nav ul li {
+    margin: 0 15px;
+}
+.sticky-nav ul li a {
+    color: white;
+    text-decoration: none;
+}

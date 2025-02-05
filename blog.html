@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             
+            text-align: center;
+        }
+        .blog-container {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .blog-post {
+            background: white;
+            padding: 20px;
+            
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: left;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .blog-post img {
+            width: 50%;
+            height:50%;
+            border-radius: 10px;
+            
+        }
+        .blog-post h2 {
+            color: #ff6600;
+            
+        }
+        .read-more {
+            color: white;
+            background: #ff6600;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .read-more:hover {
+            background: #e65c00;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+               
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="blog-container">
+        <h1>Our Blog</h1>
+        
+        <div class="blog-post">
+            <img src="ice-cream.webp" alt="Delicious Dish">
+            <h2>Life is better with a scoop of ice cream—sweet, creamy, and full of joy! 🍦✨</h2>
+            <!-- <p>Discover the top dishes that our customers love the most! From appetizers to desserts, these are the must-try items on our menu...</p> -->
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="blog-post">
+            <img src="burger-with-melted-cheese.webp" alt="Chef Special">
+            <h2>A perfect burger isn't just food; it's a bite of happiness between two buns! 🍔❤</h2>
+            <!-- <p>Get to know the mastermind behind our amazing dishes. Our head chef shares his journey and inspirations that make our cuisine special...</p> -->
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="blog-post">
+            <img src="cutting-pizza.webp" alt="Healthy Eating">
+            <h2>Pizza is the only love triangle worth being a part of cheesy, crispy, and  irresistible! 🍕🔥</h2>
+            <!-- <p>Eating healthy doesn't mean sacrificing flavor. Here are some expert tips on enjoying delicious, nutritious meals every day...</p> -->
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>

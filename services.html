@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #a3c79f;
+        }
+        .services-container {
+            padding-top: 10%;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer{
+            background-color:black;
+            color:white;
+            background: #222;
+            
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="services-container">
+        <h1>Our Restaurant Services</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="dining.jpg" alt="Fine Dining">
+                <h3>Fine Dining</h3>
+                <p>Experience gourmet meals crafted by our expert chefs in a cozy ambiance.</p>
+            </div>
+            <div class="service-card">
+                <img src="takeout.jpg" alt="Takeout">
+                <h3>Takeout</h3>
+                <p>Enjoy your favorite dishes from the comfort of your home with our quick takeout service.</p>
+            </div>
+            <div class="service-card">
+                <img src="delivery.jpg" alt="Food Delivery">
+                <h3>Food Delivery</h3>
+                <p>Fast and reliable delivery service to bring our delicious meals to your doorstep.</p>
+            </div>
+            <div class="service-card">
+                <img src="catering.jpg" alt="Catering">
+                <h3>Catering</h3>
+                <p>Make your events special with our customized catering services.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #f3e1db;
+
+        }
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+            padding-top:10%;
+        }
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+        .about-img {
+            flex: 1;
+            padding: 20px;
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .team-container {
+            padding: 50px;
+            
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            color:#f8f1f1;
+        }
+        .team-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            background-color:#222;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about-container">
+        <div class="about-img">
+            <img src="restaurant.jpg" alt="Restaurant Interior">
+        </div>
+        <div class="about-text">
+            <h1>About Our Restaurant</h1>
+            <p>Welcome to Delicious Bites! We serve mouthwatering dishes made from fresh ingredients. Whether you're here for a family dinner, a special event, or just to grab a quick bite, we promise a memorable experience.</p>
+        </div>
+    </section>
+    
+    <section class="team-container">
+        <h1>Meet Our Team</h1>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="chef.jpg" alt="Head Chef">
+                <h3>John Doe</h3>
+                <p>Head Chef</p>
+            </div>
+            <div class="team-card">
+                <img src="manager.jpg" alt="Restaurant Manager">
+                <h3>Jane Smith</h3>
+                <p>Restaurant Manager</p>
+            </div>
+            <div class="team-card">
+                <img src="server.jpg" alt="Lead Server">
+                <h3>Emily Brown</h3>
+                <p>Lead Server</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
